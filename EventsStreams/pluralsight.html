@@ -1,0 +1,1364 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords">
+<meta name="description" content="Unlimited online developer training, creative and IT courses authored by industry experts. Learn the most in-demand tech skills from our extensive library.">
+<meta property="og:description" content="Unlimited online developer training, creative and IT courses authored by industry experts. Learn the most in-demand tech skills from our extensive library.">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@pluralsight"/>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+
+    <meta name="robots" content="index, follow">
+
+
+
+<meta property="og:image" content="https://www.pluralsight.com/content/dam/pluralsight/images/heroes_backgrounds/dark/PLSGHT%20WEB%20PHOTO%20126%20dark.jpg"/>
+
+    
+    
+
+    
+    <link rel="canonical" href="https://www.pluralsight.com"/>
+    
+    
+    
+<link rel="stylesheet" href="/etc/clientlibs/pluralsight/uber.min.2f48c0e9d28c5c6e5e82fbc8903d333b.css" type="text/css">
+
+
+
+    
+
+
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6966154/7885752/css/fonts.css"/>
+
+    <script src="/etc/clientlibs/pluralsight/main/js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript">function getParameterByName(t,e){e||(e=window.location.href),t=t.replace(/[\[\]]/g,"\\$&");var a=new RegExp("[?&]"+t+"(=([^&#]*)|&|#|$)"),o=a.exec(e);return o?o[2]?decodeURIComponent(o[2].replace(/\+/g," ")):"":null}var appHost="stage.pluralsight.com"==window.location.host?"https://app-stage.pluralsight.com":"https://app.pluralsight.com",pagePath=window.location.pathname,redirectPath="";"/"!=pagePath&&0!=pagePath.indexOf("/courses/")&&0!=pagePath.indexOf("/authors/")&&0!=pagePath.indexOf("/paths/")||-1!=document.URL.indexOf("show=home")?0==pagePath.indexOf("/product/channels")&&-1==document.URL.indexOf("show=home")&&(redirectPath="/channels",document.URL.indexOf("cid=")>-1&&(redirectPath="/channels/details/"+getParameterByName("cid"))):redirectPath=pagePath.replace("/authors/","/author/").replace("/paths/","/paths/skill/"),document.cookie.indexOf("www-status-production=1")>-1&&"www.pluralsight.com"==window.location.host||document.cookie.indexOf("www-status-staging=1")>-1&&"stage.pluralsight.com"==window.location.host?""!=redirectPath?window.location=appHost+redirectPath:$(document).ready(function(){var t=appHost+"/id/dashboard",e=jQuery(".header_sign_up_link");e.text("My Dashboard"),e.attr("href",t),e.attr("title","My Dashboard"),jQuery(".header_sign_in_link").attr("style","display: none !important")}):0!=pagePath.indexOf("/customer/")||"stage.pluralsight.com"!=window.location.host&&"www.pluralsight.com"!=window.location.host?""!=redirectPath?jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?redirectTo="+redirectPath)}):jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?")}):window.location="https://www.pluralsight.com";</script>
+
+
+    
+        <script type="text/javascript">
+            // load remote script into head with callback
+            window.loadRemoteScript = function(u,t,a,i,cb) {
+                var lrs = document.createElement("script")
+                lrs.type = (t || "text/javascript");
+                lrs.id = (i || null);
+                if(a==true){lrs.async = (a || 1);}
+
+                if (lrs.readyState){  //IE
+                    lrs.onreadystatechange = function(){
+                        if (lrs.readyState == "loaded" || lrs.readyState == "complete"){
+                            lrs.onreadystatechange = null;
+                            cb();
+                        }
+                    };
+                } else {  //Others
+                    lrs.onload = function(){
+                        cb();
+                    };
+                }
+
+                lrs.src = ('https:'==document.location.protocol ? 'https://' : 'http://') + u;
+                document.getElementsByTagName("head")[0].appendChild(lrs);
+            }
+
+            //callback when demandbase api returns (and initialize holder var to later be replaced by library call)
+            var Demandbase = {};
+            window.minidbready = function(a) {
+                Demandbase = { IP: { CompanyProfile: a} };
+            }
+
+            //DEMANDBASE FULL LIBRARIES
+            loadRemoteScript(
+              'scripts.demandbase.com/LrYAV7hU.min.js',
+              'text/javascript',
+              1,
+              'demandbase_js_secondary_libs',
+              function() {
+                window.dbReady = true;
+              }
+            )
+
+        </script>
+
+        <script type="text/javascript" src="//api.demandbase.com/api/v2/ip.json?key=012bc11d09ef8437662946719f6c82d2&callback=minidbready" async></script>
+        
+        <script src="//assets.adobedtm.com/2c5f2b30762ae62377916c09612cd9d60054fba9/satelliteLib-d219ec1f03bb8f042fe31ffc29deb53997d778ef.js"></script>
+        <!--<sly data-sly-include="newrelic.html" data-sly-unwrap></sly>-->
+    
+
+
+
+
+    
+
+
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/pluralsight/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/pluralsight/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/pluralsight/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/pluralsight/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/pluralsight/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/pluralsight/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/pluralsight/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/etc/designs/pluralsight/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/etc/designs/pluralsight/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/etc/designs/pluralsight/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/etc/designs/pluralsight/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/etc/designs/pluralsight/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/etc/designs/pluralsight/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/etc/designs/pluralsight/manifest.json">
+    <link rel="mask-icon" href="/etc/designs/pluralsight/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/etc/designs/pluralsight/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/etc/designs/pluralsight/mstile-144x144.png">
+    <meta name="msapplication-config" content="/etc/designs/pluralsight/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+
+
+
+<script type="text/javascript">
+    var PS = PS || {};
+    PS['Constants'] = PS['Constants'] || {};
+    PS.Constants = {cmsUrl:'https://cms.pluralsight.com/v1',autocompleteUrl:'//content.atomz.com/autocomplete/sp10/05/0d/ad/',ddCmsUrl:'https://dd-cms-web.pluralsight.com',spUrl:'//sp10050dad.guided.ss-omtrdc.net',appUrl:'https://app.pluralsight.com'};
+</script>
+
+    <title>Pluralsight | Unlimited Online Developer, IT and Creative Training</title>
+<meta property="og:title" content="Pluralsight | Unlimited Online Developer, IT and Creative Training">
+</head>
+    
+
+<body class="mode-disabled home-template">
+    <script>$ = jQuery;</script>
+    <div class="site-wrap">
+        <div class="nav-context ">
+            <noindex><div class="header-container"><header class="header">
+    <a href="/" class="pluralsight horz-outline-inverted"><div class="pluralsight-spacing"></div></a>
+    <div class="header_browse">
+        <div class="header_search">
+            <form action="/search"> 
+                <div>
+                    <style>
+                    .header .header_search input[type="text"] {
+                        background-image: url("data:image/svg+xml;utf8,<svg viewBox='-250 -1100 1500 1500' xmlns='http://www.w3.org/2000/svg'><path fill='white' transform='scale(1,-1)' d='M875 131l-279 278q37 40 57.5 90.5t21.5 109.5q-4 127 -88 210t-208 86q-131 -3 -214.5 -86t-86.5 -210q4 -127 88 -210t208 -86q56 1 104 19t88 51l278 -279zM374 357q-107 3 -178 74t-74 178q3 107 74 178.5t178 74.5q107 -3 178.5 -74.5t74.5 -178.5 q-3 -107 -74.5 -178t-178.5 -74z'/></svg>");
+                    }
+                    </style>
+                    <input type="text" name="q" placeholder="What do you want to learn?" autocomplete="off"/>
+                </div>                                                                
+            </form>                                                                        
+        </div>
+        <div class="header_nav">
+            <ul>
+                <li class="header_nav_submenus header_nav_popular">
+                    <a href="/browse" class="header_nav_primary">Popular <div class="icons" icon="down-arrow"></div></a>
+                    <div class="header_dropdown">
+                        <div class="container-lg">
+                            <div class="col-lg-12">
+                                <div class="header_dropdown_software">Most Popular Courses</div>
+                                <div class="spc_in-sm"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <a href="/search?q=Javascript&categories=course&sort=popularity" class="header_dropdown_card">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_image"><img src="https://pluralsight.imgix.net/paths/path-logos/thumbnails/javascript-c1a9121add.png?w=140" alt=""/></div>
+                                                <div class="header_dropdown_software">Javascript</div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="/search?q=C%23&categories=course&sort=popularity" class="header_dropdown_card">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_image"><img src="https://pluralsight.imgix.net/paths/path-logos/thumbnails/c-sharp-bb3986344b.png?w=140" alt=""/></div>
+                                                <div class="header_dropdown_software">C#</div>
+                                            </div>                      
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="/search?q=Java&categories=course&sort=popularity" class="header_dropdown_card">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_image"><img src="https://pluralsight.imgix.net/paths/path-logos/thumbnails/java-956acc8505.png?w=140" alt=""/></div>
+                                                <div class="header_dropdown_software">Java</div>
+                                            </div>                      
+                                        </a>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <a href="/search?q=Angular&categories=course&sort=popularity" class="header_dropdown_card">
+                                            <div class="header_dropdown_overlay">  
+                                                <div class="header_dropdown_image"><img src="https://pluralsight.imgix.net/paths/path-logos/thumbnails/angular-c1bc804186.png?w=140" alt=""/></div>
+                                                <div class="header_dropdown_software">Angular</div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="/search?q=Python&categories=course&sort=popularity" class="header_dropdown_card">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_image"><img src="https://pluralsight.imgix.net/paths/python-7be70baaac.png?w=140" alt=""/></div>
+                                                <div class="header_dropdown_software">Python</div>
+                                            </div>                      
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="/search?q=mysql&categories=course&sort=popularity" class="header_dropdown_card">
+                                            <div class="header_dropdown_overlay"> 
+                                                <div class="header_dropdown_image"><img src="https://pluralsight.imgix.net/paths/mysql-e0720d7b98.png?w=140" alt=""/></div>
+                                                <div class="header_dropdown_software">MySQL</div>
+                                            </div>                      
+                                        </a>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="col-lg-12 type_align--center">
+                                <div class="spc_in-md"></div>
+                                <a href="/browse" class="btn-xs stroke">View all</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header_nav_submenus header_nav_courses">
+                    <a href="/browse" class="header_nav_primary">Courses <div class="icons" icon="down-arrow"></div></a>
+                    <div class="header_dropdown">
+                        <div class="container-lg">
+                            <div class="col-lg-12">  
+                                <div class="col-lg-3">
+                                    <div class="header_roles software-development">
+                                        <a href="/browse/software-development">Software Development</a>
+                                        <a href="/browse/software-development/web-development">Web Development</a>
+                                        <a href="/browse/software-development/javascript">JavaScript</a>
+                                        <a href="/browse/software-development/python">Python</a>
+                                        <a href="/browse/software-development/c-plus">C++</a>
+                                        <a href="/browse/software-development/java">Java</a>
+                                        <a href="/browse/software-development/mobile-development">Mobile Development</a>
+                                        <a href="/browse/software-development/c-sharp">C#</a>
+                                        <a href="/browse/software-development/node-js">Node.js</a>      
+                                        <a href="/browse/software-development">More...</a> 
+                                        <div class="spc_in-xs"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="header_roles manufacturing-design">
+                                        <a href="/browse/it-ops">IT Ops</a>
+                                        <a href="/browse/it-ops/it-certifications">IT Certifications</a>
+                                        <a href="/browse/it-ops/security">Security</a>
+                                        <a href="/browse/it-ops/database-administration">Database Administration</a>
+                                        <a href="/browse/it-ops/virtualization">Virtualization</a>
+                                        <a href="/browse/it-ops/it-networking">IT Networking</a>
+                                        <a href="/browse/it-ops/servers">Servers</a>
+                                        <a href="/browse/it-ops/microsoft-office">Microsoft Office</a>
+                                        <a href="/browse/it-ops/windows-server">Windows Server</a>
+                                        <a href="/browse/it-ops">More...</a> 
+                                        <div class="spc_in-xs"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="header_roles it-ops">
+                                        <a href="/browse/creative-professional">Creative Professional</a>
+                                        <a href="/browse/creative-professional/game-design">Game Design</a>
+                                        <a href="/browse/creative-professional/game-art">Game Art</a>
+                                        <a href="/browse/creative-professional/game-programming">Game Programming</a>
+                                        <a href="/browse/creative-professional/3d-design">3D Design</a>
+                                        <a href="/browse/creative-professional/vfx">VFX</a>
+                                        <a href="/browse/creative-professional/graphic-design">Graphic Design</a>
+                                        <a href="/browse/creative-professional/photoshop">Photoshop</a>
+                                        <a href="/browse/creative-professional/web-design">Web Design</a>
+                                        <a href="/browse/creative-professional">More...</a> 
+                                        <div class="spc_in-xs"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="/browse/data-professional" class="header_roles data-professional">Data Professional</a>
+                                    <div class="spc_in-sm"></div> 
+                                    <a href="/browse/architecture-construction" class="header_roles creative-professional">Architecture &amp; Construction</a>
+                                    <div class="spc_in-sm"></div>
+                                    <a href="/browse/manufacturing-design" class="header_roles business-professional">Manufacturing &amp; Design</a>
+                                    <div class="spc_in-sm"></div>
+                                    <a href="/browse/business-professional" class="header_roles architecture-construction">Business Professional</a> 
+                                    <div class="spc_in-sm"></div>
+                                    <a href="/browse/information-cyber-security" class="header_roles security-professional">Information &amp; Cyber Security</a>
+                                </div>
+                            </div>
+                            <div class="spc_in-sm"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header_nav_submenus header_nav_features">
+                    <a href="#" class="header_nav_primary">Features <div class="icons" icon="down-arrow"></div></a>
+                    <div class="header_dropdown">
+                        <div class="container-lg">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <a href="/product/paths" class="header_dropdown_card" style="border:solid 1px #555;background:url(/dam/pluralsight/images/target/header_test/software_001.jpg);background-size:100% auto;">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_platform">
+                                                    <div class="header_dropdown_platform_image"><img src="/dam/pluralsight/images/target/header_test/path_icon@3x.png"/></div>
+                                                    Paths
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="/product/tests" class="header_dropdown_card" style="border:solid 1px #555;background:url(/dam/pluralsight/images/target/header_test/software_002.jpg);background-size:100% auto;">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_platform">
+                                                    <div class="header_dropdown_platform_image"><img src="/dam/pluralsight/images/target/header_test/skills_icon@3x.png"/></div>
+                                                    Skill measurement
+                                                </div>
+                                            </div>                      
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="/product/mentoring" class="header_dropdown_card" style="border:solid 1px #555;background:url(/dam/pluralsight/images/target/header_test/software_003.jpg);background-size:100% auto;">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_platform">
+                                                    <div class="header_dropdown_platform_image"><img src="/dam/pluralsight/images/target/header_test/mentors_icon@3x.png"/></div>
+                                                    Mentoring
+                                                </div>
+                                            </div>                      
+                                        </a>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <a href="/authors" class="header_dropdown_card" style="border:solid 1px #555;background:url(/dam/pluralsight/images/target/header_test/software_004.jpg);background-size:100% auto;">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_platform">
+                                                    <div class="header_dropdown_platform_image"><img src="/dam/pluralsight/images/target/header_test/authors_icon@3x.png"/></div>
+                                                    Authors
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="/downloads" class="header_dropdown_card" style="border:solid 1px #555;background:url(/dam/pluralsight/images/target/header_test/software_005.jpg);background-size:100% auto;">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_platform">
+                                                    <div class="header_dropdown_platform_image"><img src="/dam/pluralsight/images/target/header_test/viewing_icon@3x.png"/></div>
+                                                    Viewing Options
+                                                </div>
+                                            </div>                      
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="https://www.codeschool.com" target="_blank" class="header_dropdown_card" style="border:solid 1px #555;background:url(/dam/pluralsight/images/target/header_test/software_006.jpg);background-size:100% auto;">
+                                            <div class="header_dropdown_overlay">
+                                                <div class="header_dropdown_platform"> 
+                                                    <div class="header_dropdown_platform_image"><img src="/dam/pluralsight/images/target/header_test/codeschool_icon@3x.png"/></div> 
+                                                    Code School
+                                                </div>
+                                            </div>                      
+                                        </a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/business" class="header_nav_primary">Business</a></li>
+                <li><a href="/learn" class="header_nav_primary">Individuals</a></li>                                  
+                <li class="mobile-only">
+                    <ul> 
+                        <li><a class="header_sign_in_link sign_in_link" href="https://app.pluralsight.com/id?">Sign in</a></li>
+                        <li><a class="header_sign_up_link" href="/pricing" data-aa-title="nav-signup-cta">Sign up</a></li>
+                        <li><a href="/browse">Browse courses</a></li>
+                        <li><a href="/learn">For individuals</a></li>
+                        <li><a href="/business">For business</a></li>
+                        <li><a href="http://help.pluralsight.com/help">Support</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/thehub">Resource Center</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>  
+        <div class="clear"></div>
+    </div>
+    <a href="#" class="header_menu">
+        <div class="header_menu_line"></div>
+        <div class="header_menu_line"></div>
+        <div class="header_menu_line"></div>
+    </a>
+    <div class="header_utilities">
+        <a href="https://app.pluralsight.com/id?" class="btn-xs flat white header_sign_in_link sign_in_link">Sign in</a>
+        <a href="/pricing" class="btn-xs header_sign_up_link" data-aa-title="nav-signup-cta">Sign up</a>
+    </div>
+    <div class="clear"></div>
+</header>
+<div class="header-padding"></div></div></noindex>
+            <div id="content" role="main">
+    <div class="contain section home-page"><div class="generic-block section">
+    
+
+    <div id="ps_homepage_" class="hidden"></div>
+    <div class="generic-block-wrapper  block block--black block--center block--middle generic-block--five-ten generic-block--vertical-center padding-top-twenty padding-bottom-twenty ps_homepage clearfix" style="background-image: url('/content/pluralsight/en/jcr:content/main/generic_block_100190/image-res/file.img.jpg');background-position:center;">
+        <div class="main clearfix">
+            <div class="clearfix"><div class="column-control section"><div>
+<div class="container column-control-container ">
+        <div class="row         column-control--wide">
+            
+                <div class="large-12 columns"><div class="free-form-component section">
+<style>
+  #ps_homepage_ + .generic-block-wrapper {
+min-height: 600px;
+}
+.ps_hero--title {
+font-size: 72px;
+font-weight: 500;
+position: relative;
+line-height: 72px;
+}
+.ps_hero--title__accent {
+position: relative;
+z-index: 1;
+width: 100%;
+height: 100%;
+padding-right: 4px;
+padding-left: 1px;
+}
+.ps_hero--title__accent--block {
+background: #f0582b;
+background: -moz-linear-gradient(left, #f0582b 0%, #e80d86 100%);
+background: -webkit-linear-gradient(left, #f0582b 0%,#e80d86 100%); 
+background: linear-gradient(to right, #f0582b 0%,#e80d86 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0582b', endColorstr='#e80d86',GradientType=1 ); 
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    right: 0;
+    z-index: -1;
+}
+.ps_hero--description { 
+font-size: 24px; 
+line-height: 1.4; 
+margin-bottom: 40px; 
+margin-top: 20px;
+font-weight:200;
+}
+.ps_btn.gradient {
+background: #F05A28; 
+background: -moz-linear-gradient(left, #F05A28 0%, #E80A89 100%); 
+background: -webkit-linear-gradient(left, #F05A28 0%, #E80A89 100%); 
+background: linear-gradient(to right, #F05A28 0%, #E80A89 100%); 
+border: none; 
+font-size: 1.0rem; 
+line-height: 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+#ps_homepage_ + .generic-block-wrapper {
+min-height: auto;
+}
+.ps_hero--title {
+font-size: 40px;
+line-height: 40px;
+margin-bottom: 40px;
+}
+.ps_hero--description {
+font-size: 18px;
+}
+.ps_hero--title__accent--block {
+height: 29px;
+bottom: 1px;
+}
+}
+@media only screen and (min-width: 769px) {
+#ps_homepage_ + .generic-block-wrapper {
+padding: 160px 0;
+}
+}
+</style>
+<div class="ps_hero">
+	<div class="ps_hero--content">
+		<div class="ps_hero--title">
+			Advantage, 
+			<span class="ps_hero--title__accent">you. <span class="ps_hero--title__accent--block"></span></span>
+		</div>
+		<div class="ps_hero--description">Work smarter, keep pace and take control of your career with a technology learning platform that puts the world's leading experts at your fingertips.</div>
+		<a href="https://billing.pluralsight.com/individual/checkout/account-details?sku=IND-Y-PLUS-FT" class="ps_btn gradient">Start a FREE 10-day trial</a>
+	</div>
+</div> 
+</div>
+
+</div>
+                
+                
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+       </div>
+    </div>
+
+</div>
+<div class="generic-block section">
+    
+
+    
+    <div class="generic-block-wrapper parallax block block--black block--left block--middle   padding-top-ten padding-bottom-ten  clearfix" style="background-image: ;">
+        <div class="main clearfix">
+            <div class="clearfix"><div class="column-control section"><div>
+<div class="container column-control-container gridStacking">
+        <div class="row       padding-top-ten padding-bottom-ten column-control--super-wide">
+            
+                <div class="large-3 columns"><div class="card section">
+
+<div class="ps_card">
+    <div class="ps_card--container">
+        <a class="ps_card--main" href="https://learn.pluralsight.com/resource/offers/top-10-courses-by-industry/ctf">
+            <div class="ps_card--image" style="background-image: url(\2f content\2fpluralsight\2f en\2fjcr:content\2fmain\2fgeneric_block\2fparsys\2f columns_copy\2f column-parsys-1\2f card\2fimage-res\2f file.img.jpg);">
+            </div>
+
+            <div class="ps_card--body-wrapper">
+                <div class="ps_card--body">
+                    <div class="ps_card--type">
+                        Interactive
+                    </div>
+
+                    <div class="ps_card--headlines">
+                        <div class="ps_card--content">
+                            <div class="ps_card--title">
+                                <span>Most popular courses by industry </span>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="ps_card--meta">
+                        What are others in your industry learning?
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="ps_card--foot">
+            <a href="https://www.pluralsight.com/thehub?type=Guide">ALL GUIDES</a>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+                
+                
+            
+                
+                <div class="large-3 columns"><div class="card section">
+
+<div class="ps_card">
+    <div class="ps_card--container">
+        <a class="ps_card--main" href="https://www.pluralsight.com/resource-center/webinars/angular-in-2017">
+            <div class="ps_card--image" style="background-image: url(\2f content\2fpluralsight\2f en\2fjcr:content\2fmain\2fgeneric_block\2fparsys\2f columns_copy\2f column-parsys-2\2f card\2fimage-res\2f file.img.jpg);">
+            </div>
+
+            <div class="ps_card--body-wrapper">
+                <div class="ps_card--body">
+                    <div class="ps_card--type">
+                        Webinar
+                    </div>
+
+                    <div class="ps_card--headlines">
+                        <div class="ps_card--content">
+                            <div class="ps_card--title">
+                                <span>What’s new in Angular?</span>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="ps_card--meta">
+                        By Sergio Cruz &amp; Alyssa Nicoll
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="ps_card--foot">
+            <a href="https://www.pluralsight.com/thehub?type=Webinar">All Webinars</a>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+                
+            
+                
+                <div class="large-3 columns"><div class="card section">
+
+<div class="ps_card">
+    <div class="ps_card--container">
+        <a class="ps_card--main" href="https://www.pluralsight.com/live">
+            <div class="ps_card--image" style="background-image: url(\2f content\2fpluralsight\2f en\2fjcr:content\2fmain\2fgeneric_block\2fparsys\2f columns_copy\2f column-parsys-3\2f card\2fimage-res\2f file.img.jpg);">
+            </div>
+
+            <div class="ps_card--body-wrapper">
+                <div class="ps_card--body">
+                    <div class="ps_card--type">
+                        Events
+                    </div>
+
+                    <div class="ps_card--headlines">
+                        <div class="ps_card--content">
+                            <div class="ps_card--title">
+                                <span>Pluralsight LIVE</span>
+                            </div>
+
+                            <div class="ps_card--subtitle">
+                                Our first ever in-person conference where leaders and visionaries collide.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ps_card--meta">
+                        Sept. 19 - 21
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="ps_card--foot">
+            <a href="https://www.pluralsight.com/live">Register Now</a>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+                
+            
+                
+                
+                <div class="large-3 columns"><div class="card section">
+
+<div class="ps_card">
+    <div class="ps_card--container">
+        <a class="ps_card--main" href="https://learn.pluralsight.com/resource/offers/make-the-most-of-your-technology-investment">
+            <div class="ps_card--image" style="background-image: url(\2f content\2fpluralsight\2f en\2fjcr:content\2fmain\2fgeneric_block\2fparsys\2f columns_copy\2f column-parsys-4\2f card\2fimage-res\2f file.img.jpg);">
+            </div>
+
+            <div class="ps_card--body-wrapper">
+                <div class="ps_card--body">
+                    <div class="ps_card--type">
+                        Article
+                    </div>
+
+                    <div class="ps_card--headlines">
+                        <div class="ps_card--content">
+                            <div class="ps_card--title">
+                                <span>6 steps to make the most of your data technology investment</span>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="ps_card--meta">
+                        Ensure your data solutions are a success.
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="ps_card--foot">
+            <a href="https://www.pluralsight.com/thehub?type=Article">All Articles</a>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+       </div>
+    </div>
+
+</div>
+<div class="free-form-component section">
+<style>
+  	.ps_what { color: #fff; overflow: hidden; background-color:#222222;}
+	.ps_what--container { margin: 0 auto; max-width: 1400px; position: relative; }
+	.ps_what--container:after { clear: both; content: ""; display: block; }
+	.ps_what--content { box-sizing: border-box; height: 700px; max-width: 700px; padding: 20px 30px; position: relative; z-index: 9; }
+	@media only screen and (min-width: 600px) { .ps_what--content { height: 700px; padding: 40px 50px; } }
+	@media only screen and (min-width: 1025px) { .ps_what--content { height: auto; padding: 60px 0px 50px 90px; margin-right:600px; } }
+	.ps_what--device { bottom: 0; position: absolute; right: 0; width: 500px; z-index: 99; }
+	@media only screen and (min-width: 600px) { .ps_what--device { width: 600px; } }
+	.ps_what--description { color: #DDD; font-size: 14px; font-weight: 200; line-height: 24px; margin-bottom: 40px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; -o-hyphens: none; hyphens: none; }
+	@media only screen and (min-width: 600px) { .ps_what--description { font-size: 18px; line-height: 28px; } }
+	.ps_what--gradient { background: -moz-radial-gradient(center, ellipse cover, #565656 0%, rgba(86, 86, 86, 0) 50%); background: -webkit-radial-gradient(center, ellipse cover, #565656 0%, rgba(86, 86, 86, 0) 50%); background: radial-gradient(ellipse at center, #565656 0%, rgba(86, 86, 86, 0) 50%); display: none; height: 1000px; right: -40px; bottom: -500px; position: absolute; width: 1000px; z-index: 9; }
+	@media only screen and (min-width: 1024px) { .ps_what--gradient { display: block; } }
+	.ps_what--screen { bottom: 0; height: 250px; overflow: hidden; position: absolute; right: 52px; width: 400px; z-index: 999; }
+	@media only screen and (min-width: 600px) { .ps_what--screen { height: 301px; right: 62px; width: 481px; } }
+	.ps_what--title { border-width: 10px 0 10px 10px; border-style: solid; box-sizing: border-box; -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F05A28), to(#E80A89)) 1 100%; -webkit-border-image: -webkit-linear-gradient(#F05A28, #E80A89) 1 100%; -moz-border-image: -moz-linear-gradient(#F05A28, #E80A89) 1 100%; -o-border-image: -o-linear-gradient(#F05A28, #E80A89) 1 100%; border-image: linear-gradient(to bottom, #F05A28, #E80A89) 1 100%; font-size: 24px; font-weight: 100; line-height: 18px; margin-bottom: 20px; padding-left: 15px; padding-top: 4px; }
+	@media only screen and (min-width: 600px) { .ps_what--title { font-size: 36px; line-height: 24px; } }
+
+
+	.ps_btn.stroke, .stroke.ps_btn-sm, .stroke.ps_btn-lg { background: transparent; border: solid 1px #fff; color: #FFF !important; }
+	.ps_btn.stroke:hover, .stroke.ps_btn-sm:hover, .stroke.ps_btn-lg:hover { border: solid 1px #FF7B39; color: #FF7B39 !important; }
+	.ps_btn.stroke:hover span, .stroke.ps_btn-sm:hover span, .stroke.ps_btn-lg:hover span { border-left: 11px solid #FF7B39; }
+
+	.ps_btn span, .ps_btn-sm span, .ps_btn-lg span { border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 11px solid #fff; font-size: 0; height: 0; line-height: 0; margin-right: 10px; position: relative; top: -4px; width: 0; }
+</style>
+<div class="ps_what">                     
+	<div class="ps_what--container">
+		<div class="ps_what--gradient"></div>  
+		<div class="ps_what--screen"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/ps_skills--individual.jpg" alt=""></div>
+		<div class="ps_what--device"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/macbook@2x.png" alt=""></div>   
+		<div class="ps_what--content">
+			<div class="ps_what--title">What is Pluralsight?</div>
+			<div class="ps_what--description">As your industry and business model evolve, you need a learning solution that helps you deliver key innovations on time and on budget. With our platform, you can evaluate the technical abilities of your teams, align learning to key business objectives and close skills gaps in critical areas like cloud, design, security, mobile and data.</div>
+			<a href="https://www.youtube.com/embed/nbKc7uCB4VA?autoplay=1&amp;hd=1&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;enablejsapi=1" class="ps_btn stroke fancybox fancybox.iframe"><span></span>See how it's done</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="reference parbase section"><div style="display:inline;" class="cq-dd-paragraph"><div class="main parsys"><div class="free-form-component section">
+
+<div id="ps_logos--test">
+  <style type="text/css">
+    .clear { clear:both; }
+ .ps_logos a,
+.ps_logos a:hover  {  border-radius:2px;border:solid 1px #222; padding:0 20px; font-size:12px !important; color:#222; margin: 0 20px; position: relative; top: -5px; text-decoration:none; }
+    .ps_logos { background: #f2f2f2; clear: both; font-size: 18px; font-weight: 200; line-height: 24px; padding: 40px 10px 40px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+    .ps_logos img { width:100%; }  
+    .ps_logos--title { font-size:24px; line-height:34px; font-weight:200; color:#555; }
+    @media only screen and (min-width: 37.5em) { .ps_logos { font-size: 24px; line-height: 32px; } }
+    .ps_logos a { display: block; font-size: 16px; font-weight: 400; padding: 0 20px; }
+    @media only screen and (min-width: 37.5em) { .ps_logos a { display: inline-block; /* For normal, healthy browsers */ }
+      * html .ps_logos a { /* for IE6 */ display: inline; }
+      * + html .ps_logos a { /* for IE7 */ display: inline; } }
+    .ps_logos--container { max-width: 68.75rem; margin: 0 auto; padding: 10px 0; }
+    .ps_logos--block { float: left; width: 25%; }
+    @media only screen and (min-width: 37.5em) { .ps_logos--block { width: 25%; } }
+    @media only screen and (min-width: 64em) { .ps_logos--block { width: 12.5%; } }
+    @media only screen and (max-width: 37.5em) { .ps_logos a { margin-top:30px;} }
+
+
+  </style>
+  <div class="ps_logos">
+    <div class="ps_logos--title">Helping thousands of organizations transform at scale.<a href="https://www.pluralsight.com/business"> Learn more</a></div>
+    <div class="ps_logos--container">
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/adp@3x.png" alt=""/></div> 
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/vmware@3x.png" alt=""/></div>
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/tableau@3x.png" alt=""/></div> 
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/sap@3x.png" alt=""/></div>  
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/disney@3x.png" alt=""/></div>     
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/att@3x.png" alt=""/></div>
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/cisco@3x.png" alt=""/></div>    
+      <div class="ps_logos--block"><img src="https://www.pluralsight.com/content/dam/pluralsight2/target/gamestop2.png" alt=""/></div>
+    </div>                                                               
+    <div class="clear"></div>  
+	<div></div>
+  </div
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="reference parbase section"><div style="display:inline;" class="cq-dd-paragraph"><div class="free_form_component free-form-component">
+<style>
+    .ps_cigar_banner {
+    background: #0E0E0E; /*Change background color*/
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+   /*Customize Text*/
+  .ps_cigar_banner .ps_cigar_banner--title {
+   color: white;
+   font-size: 16px;
+   font-weight: 500;
+   display: inline-block;
+   vertical-align: middle;
+  }
+  .ps_cigar_banner .ps_btn {
+   margin-left: 20px;
+   display: inline-block;
+   vertical-align: middle;
+  }
+
+
+@media only screen and (max-width: 738px) {
+  .ps_cigar_banner .ps_btn {
+margin-left:0px;
+margin-top:10px;
+margin-bottom:5px;
+}
+}
+</style>
+<div class="ps_cigar_banner">
+  <div class="row">
+  <span class="ps_cigar_banner--title">Test your skills. Learn something new. Get help. Repeat.</span> <a class="ps_btn" href="https://billing.pluralsight.com/individual/checkout/account-details?sku=IND-Y-PLUS-FT">Start a FREE 10-Day Trial</a>
+  </div>
+</div>  
+</div>
+</div>
+</div>
+<div class="free-form-component section">
+<style>
+  	.homepage-modal{display:none;position:relative;z-index:99999;}
+    .homepage-modal--close{background:url(https://www.pluralsight.com/content/dam/pluralsight2/product/business_platform/ps_close_btn@2x.png);background-size:cover;cursor:pointer;;height:45px;position:absolute;right:20px;top:20px;width:45px;} 
+    .homepage-modal--overlay{background:rgba(43,43,43,0.8);position:fixed;top:0;left:0;right:0;bottom:0;opacity:0;}
+	.homepage-modal--header{padding:25px;}   
+    .homepage-modal--subtitle{color:#AAA;font-size:21px;font-weight:200;}                                               
+    .homepage-modal--container{background:#000;color:#fff;font-size:32px;font-weight:500;left:50%;margin:auto;max-width:700px;opacity:0;position:fixed;text-align:center;top:50%;transform:translate(-50%,-50%);width:700px;}
+	.homepage-modal--buttons{padding:30px 75px 70px;}
+	.homepage-modal--option{box-sizing:border-box;border-radius:500px;color:#fff;display:inline-block;height:250px;float:left;line-height:250px;position:relative;text-decoration:none;width:250px;z-index:999;}
+	.homepage-modal--option:hover,
+	.homepage-modal--option:active,
+	.homepage-modal--option:focus{color:#fff;text-decoration:none;}
+	.homepage-modal--option span{position:relative;z-index:9999;}    
+    .homepage-modal--individuals{ background:#000 url("https://www.pluralsight.com/content/dam/pluralsight2/target/ps_modal--individual_v2.jpg") no-repeat center center; }                                                                    
+    .homepage-modal--teams{ background:#000 url("https://www.pluralsight.com/content/dam/pluralsight2/target/ps_modal--team_v2.jpg") no-repeat center center; }
+    .homepage-modal--or { height:250px;float:left;font-size:16px;font-weight:500;line-height:250px;text-transform:uppercase;width:50px;}                                                                               
+    @media (max-width:768px) {   
+		.homepage-modal--close{ right:10px; top:10px; }
+		.homepage-modal--buttons { padding:0 20px 20px 20px; }
+		.homepage-modal--or { float:none; height:50px; line-height:50px; width:100%; }
+		.homepage-modal--container{font-size:18px;padding-top:20px;width:80%;min-width:320px;}
+        .homepage-modal--option{float:none;height:180px;line-height:180px;width:180px;}                                                                     
+    } 
+</style>
+<!-- interest modal-->
+<div class="homepage-modal">
+    <div class="homepage-modal--overlay"></div>
+    <div class="homepage-modal--container">  
+        <div class="homepage-modal--close"></div>
+        <div class="homepage-modal--header">
+            <div class="homepage-modal--title">Welcome to Pluralsight</div>
+            <div class="homepage-modal--subtitle">Tell us about why you're here</div>
+        </div>
+        <div class="homepage-modal--buttons">
+            <a href="#learn" class="homepage-modal--individuals homepage-modal--option"><span>Individuals</span></a>
+			<div class="homepage-modal--or">or</div>
+            <a href="https://www.pluralsight.com/business" class="homepage-modal--teams homepage-modal--option"><span>Teams</span></a>
+            <div style="clear:both;"></div>
+        </div>
+    </div>  
+</div>
+<script type="text/javascript">
+          jQuery(document).ready(function(){     
+            if (!jQuery.cookie('pshp13test')) {
+                jQuery.cookie('pshp13test', true, {
+                    expires: 365
+                });
+                window.setTimeout(function(){
+                    jQuery('.homepage-modal').show();
+                    jQuery('.homepage-modal--overlay').animate({
+                        opacity:1
+                    },300,function(){
+                        jQuery('.homepage-modal--container').animate({
+                            opacity:1
+                        },300); 
+                    }); 
+                },500);
+            }
+            jQuery(document).on({
+                click:function(e){
+                    e.preventDefault();
+                    jQuery('.homepage-modal--container').animate({
+                        opacity:0
+                    },300,function(){
+                        jQuery('.homepage-modal--overlay').animate({
+                            opacity:0
+                        },300,function(){   
+                                jQuery('.homepage-modal').hide();
+                        }); 
+                    });
+                }
+            },'.homepage-modal--overlay, .homepage-modal--close, .homepage-modal--header')
+        });
+       // sc tracking for modal buttons
+       if (jQuery(".homepage-modal").length) {
+          jQuery(".homepage-modal .homepage-modal--buttons a").on('click', function(e) {
+             e.preventDefault();
+             var $button = jQuery(this);
+             var buttonLink = $button.attr("href");
+             var buttonEventName = "";
+             if (buttonLink.indexOf("learn") !== -1) {
+                buttonEventName = 'Individual Interest Click';
+                jQuery('.homepage-modal--container').animate({
+                    opacity:0
+                },300,function(){
+                    jQuery('.homepage-modal--overlay').animate({
+                        opacity:0
+                    },300,function(){   
+                            jQuery('.homepage-modal').hide();
+                    }); 
+                });
+             } else if (buttonLink.indexOf("business") !== -1) {
+                buttonEventName = 'Business Interest Click';
+                setTimeout(function(){
+                    window.location = "https://www.pluralsight.com/business";
+                },500);
+             }
+             scTrack('link', {
+                eventName: buttonEventName
+             });
+          });
+       }
+</script></div>
+<div class="reference parbase section"><div style="display:inline;" class="cq-dd-paragraph"><div class="main parsys"><div class="generic-modal section">
+<div id="contact-sales" class="main clearfix">
+    <div class="clearfix"><div class="generic-block section">
+    
+
+    <div id="contact-sales_" class="hidden"></div>
+    <div class="generic-block-wrapper  block block--black block--left block--middle   padding-top-twenty padding-bottom-twenty contact-sales clearfix" style="background-image: ;">
+        <div class="main clearfix">
+            <div class="clearfix"><div class="column-control section"><div>
+<div class="container column-control-container ">
+        <div class="row         ">
+            
+                <div class="medium-12 columns"><div class="title section">
+
+<div data-emptytext="Title">
+    <h3>
+        Contact sales
+    </h3>
+</div></div>
+<div class="marketo-form section">
+<div class="marketo-form-component marketo-form--inline marketo-form--left  clearfix">
+    
+    <div class="marketo-form-data hidden">
+        <span class="form-preset"> </span>
+        <span class="form-id">2183</span>
+        <a class="redirect-path">Redirect Link</a>
+        <span class="download-path"></span>
+        <span class="success-message">Thank you! Our team will be in touch shortly. </span>
+    </div>
+    
+    <form id="marketoForm_2183" class="marketo-target"></form>
+    <iframe id="marketo-file" style="display:none;"></iframe>
+</div>
+
+<script defer src="//app-sjqe.marketo.com/js/forms2/js/forms2.min.js"></script></div>
+<div class="free-form-component section">
+<style>
+  button {
+  background-color: #E82A89;
+}
+button:hover {
+ background-color: #CC1671;
+}
+.mktoField {
+ background: #222 !important; 
+  border: solid 1px #555 !important;
+  color: #fff !important;
+}
+.mktoHtmlText {
+ color: #808080;
+}
+.mktoHtmlText a {
+ color: #E82A89;
+}
+.title--white {
+ font-size: 21px;
+font-weight: 500;
+color: #ccc;
+margin-bottom:25px;
+}
+.contact-sales {
+    padding: 45px 45px 5px 45px !important;
+    position: relative;
+    box-sizing: border-box;
+}
+.contact-sales:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to left, #FF7B39, #E82A89);
+      top: 0;
+      left: 0;
+    }
+ .ps_pilot_close_btn {
+			position:absolute;
+			top:-30px;
+			right:-35px;
+			width:40px; 
+			z-index:9999;
+                       cursor:pointer;
+		}
+</style>
+<img src="https://www.pluralsight.com/content/dam/pluralsight2/product/business_platform/ps_close_btn@2x.png" class="ps_pilot_close_btn"/>
+<script type="text/javascript">
+  		jQuery(document).on({
+			click:function(e){   
+				e.preventDefault(); 
+				jQuery('.fancybox-overlay').trigger("click");
+			}
+		},'.ps_pilot_close_btn');
+</script></div>
+
+</div>
+                
+                
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+       </div>
+    </div>
+
+</div>
+
+</div>
+</div></div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+            <noindex><div id="global-footer" class="block generic-block block--dark">
+	<!--<div data-sly-include="/apps/pluralsight/components/global/sticky-footer/sticky-footer.html" data-sly-unwrap></div>-->
+    <div class="main">
+        <div><div>
+<div class="container column-control-container ">
+        <div class="row         ">
+            
+                <div class="medium-five-col columns"><div class="logo section">
+<div class="logo">
+    <a href="/" title="Pluralsight">
+        <img src="/content/dam/pluralsight/images/logo/PS_logo_footer_F-03.png">
+    </a>
+</div></div>
+<div class="share section">
+
+    <div class="share-component share__links addthis_toolbox share--link 8 ">
+        <div class="addthis_custom_follow clearfix">
+            <a href="https://www.facebook.com/pluralsight" class="share__link face-icon " target="_blank" alt="Like">
+                <div></div>
+            </a>
+            <a href="http://www.instagram.com/pluralsight" class="share__link insta-icon " target="_blank" alt="Like">
+                <div></div>
+            </a>
+            <a href="https://www.twitter.com/pluralsight" class="share__link tweet-icon " target="_blank" alt="Like">
+                <div></div>
+            </a>
+            <a href="https://www.linkedin.com/company/pluralsight" class="share__link linkedin-icon " target="_blank" alt="Like">
+                <div></div>
+            </a>
+            <a href="https://plus.google.com/+pluralsight" class="share__link goog-icon " target="_blank" alt="Like">
+                <div></div>
+            </a>
+            <a href="https://www.youtube.com/user/pluralsight" class="share__link youtube-icon " target="_blank" alt="Like">
+                <div></div>
+            </a>
+        </div>
+    </div>
+
+    </div>
+<div class="column-control section"><div>
+<div class="container column-control-container ">
+        <div class="row       padding-top-eighty  ">
+            
+                <div class="large-12 columns">
+</div>
+                
+                
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="image section">
+<a href="https://www.pluralsight.com/event-details/2017/live-2017" target="_blank">
+	<img src="/content/dam/pluralsight2/events/2017/live/live-footer.jpg" class="image--center"/>
+</a>
+</div>
+<div class="spacer section"><div class="spacer" style="height:50px"></div>
+</div>
+
+</div>
+                
+                
+            
+                
+                <div class="medium-five-col columns"><div class="title section">
+
+<div data-emptytext="Title">
+    <h4>
+        SOLUTIONS
+    </h4>
+</div></div>
+<div class="link section">
+<a href="/business" class="plain    " target="_self">
+    For teams
+</a></div>
+<div class="link section">
+<a href="/learn" class="plain    " target="_self">
+    For individuals
+</a></div>
+<div class="link section">
+<a href="/browse/software-development" class="plain    " target="_self">
+    Software development
+</a></div>
+<div class="link section">
+<a href="/browse/it-ops" class="plain    " target="_self">
+    IT Ops
+</a></div>
+<div class="link section">
+<a href="/browse/creative-professional" class="plain    " target="_self">
+    Creative professional
+</a></div>
+<div class="link section">
+<a href="/kids-courses" class="plain    " target="_self">
+    Free courses for kids 
+</a></div>
+
+</div>
+                
+            
+                
+                <div class="medium-five-col columns"><div class="title section">
+
+<div data-emptytext="Title">
+    <h4>
+        PLATFORM
+    </h4>
+</div></div>
+<div class="link section">
+<a href="/browse" class="plain    " target="_self">
+    Browse library
+</a></div>
+<div class="link section">
+<a href="/product/paths" class="plain    " target="_self">
+    Paths
+</a></div>
+<div class="link section">
+<a href="/product/tests" class="plain    " target="_self">
+    Skill measurement
+</a></div>
+<div class="link section">
+<a href="/product/mentoring" class="plain    " target="_self">
+    Mentoring
+</a></div>
+<div class="link section">
+<a href="/authors" class="plain    " target="_self">
+    Authors
+</a></div>
+<div class="link section">
+<a href="/downloads" class="plain    " target="_self">
+    Mobile and offline viewing
+</a></div>
+<div class="link section">
+<a href="https://www.codeschool.com/" class="plain    " target="_self">
+    Code School
+</a></div>
+<div class="link section">
+<a href="/catalog" class="plain    " target="_self">
+    Course catalog
+</a></div>
+
+</div>
+                
+            
+                
+                <div class="medium-five-col columns"><div class="title section">
+
+<div data-emptytext="Title">
+    <h4>
+        Support
+    </h4>
+</div></div>
+<div class="link section">
+<a href="http://help.pluralsight.com/help" class="plain    " target="_self">
+    Help center
+</a></div>
+<div class="link section">
+<a href="http://help.pluralsight.com/help" class="plain    " target="_self">
+    Knowledge base
+</a></div>
+<div class="link section">
+<a href="/product/integrations" class="plain    " target="_self">
+    Integrations
+</a></div>
+<div class="link section">
+<a href="https://www.pluralsight.com/content/dam/pluralsight/landing-pages/resource/tutorial/pluralsight-ip-whitelist.pdf" class="plain    " target="_self">
+    IP whitelist
+</a></div>
+
+</div>
+                
+            
+                
+                
+                <div class="medium-five-col columns"><div class="title section">
+
+<div data-emptytext="Title">
+    <h4>
+        COMPANY
+    </h4>
+</div></div>
+<div class="link section">
+<a href="/contact" class="plain    " target="_self">
+    Contact
+</a></div>
+<div class="link section">
+<a href="/about" class="plain    " target="_self">
+    About
+</a></div>
+<div class="link section">
+<a href="/customer-stories" class="plain    " target="_self">
+    Customer stories
+</a></div>
+<div class="link section">
+<a href="/events" class="plain    " target="_self">
+    Events
+</a></div>
+<div class="link section">
+<a href="/careers" class="plain    " target="_self">
+    Careers
+</a></div>
+<div class="link section">
+<a href="/teach" class="plain    " target="_self">
+    Teach
+</a></div>
+<div class="link section">
+<a href="/resource-center" class="plain    " target="_self">
+    Resource center
+</a></div>
+<div class="link section">
+<a href="/blog" class="plain    " target="_self">
+    Blog
+</a></div>
+<div class="link section">
+<a href="/newsroom" class="plain    " target="_self">
+    Newsroom
+</a></div>
+<div class="link section">
+<a href="/tech-blog" class="plain    " target="_self">
+    Tech  blog
+</a></div>
+<div class="link section">
+<a href="https://www.codeschool.com/?ref=pluralsight" class="plain    " target="_self">
+    Code School
+</a></div>
+<div class="link section">
+<a href="https://www.pluralsight.com/affiliate" class="plain    " target="_self">
+    Affiliate program
+</a></div>
+<div class="link section">
+<a href="/about/offices" class="plain    " target="_self">
+    Office locations
+</a></div>
+<div class="link section">
+<a href="/subscribe" class="plain    " target="_self">
+    Subscribe
+</a></div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+</div>
+        <div><div>
+<div class="container column-control-container ">
+        <div class="row         ">
+            
+                <div class="medium-12 columns">
+</div>
+                
+                
+            
+        </div>
+    </div>
+</div>
+</div>
+        <div id="global-footer-copyright-wrapper">
+        	<div class="row">
+        		<div class="columns">
+        			<div>
+
+<div class="text-component    ">
+    <p>Copyright © 2004 - 2017 Pluralsight LLC. All rights reserved.</p>
+
+</div>
+</div>
+        			<div id="global-footer-copyright-links">
+        				<span class="copyright-divider">|</span>
+        				<div>
+<a href="/terms" class="plain    " target="_self">
+    Terms of Use
+</a></div>
+        				<span class="copyright-divider">|</span>
+        				<div>
+<a href="/privacy" class="plain    " target="_self">
+    Privacy Policy
+</a></div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+</div>
+</noindex>
+            
+
+	
+	    
+    
+<script type="text/javascript" src="/etc/clientlibs/pluralsight/uber.min.0178193047b0fc35e21a869f38318a70.js" defer></script>
+
+
+	
+
+	<!--adobe dtm page end call-->
+	<script type="text/javascript">
+		window.demandbaseTryCount = 0;
+
+		window.fireSatelliteFooter = function(){
+			if (window.dbReady || window.demandbaseTryCount > 10){
+				_satellite.pageBottom();
+			} else{
+				window.demandbaseTryCount++;
+				setTimeout(function(){
+					fireSatelliteFooter();
+				},200);
+			}
+		}
+
+		fireSatelliteFooter();
+	</script>
+
+        </div>
+    </div>
+</body>
+</html>

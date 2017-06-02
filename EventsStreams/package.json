@@ -1,0 +1,11 @@
+{
+  "name": "eventstreamtest",
+  "version": "1.0.0",
+  "description": "examples of events and streams",
+  "main": "events_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mitul",
+  "license": "ISC"
+}

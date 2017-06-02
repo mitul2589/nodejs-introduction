@@ -1,0 +1,16 @@
+{
+  "name": "webservicestest",
+  "version": "1.0.0",
+  "description": "rest web services examples",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "mongoose": "^4.10.1",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "testpublishmodule",
+  "version": "1.0.0",
+  "description": "testing how to use publish module",
+  "main": "index.js",
+  "scripts": {
+    "test": "indes.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
